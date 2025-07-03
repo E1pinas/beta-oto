@@ -1,0 +1,15 @@
+# Node modules en cualquier carpeta
+**/node_modules/
+
+# Logs
+*.log
+
+# Docker volumes (por seguridad)
+volumes/
+
+# .env files
+*.env
+
+# IDE configs
+.vscode/
+.idea/
