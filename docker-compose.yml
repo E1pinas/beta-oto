@@ -1,6 +1,6 @@
 services:
   mariadb:
-    image: mariadb:latest
+    image: mariadb:11.4
     container_name: mariadb
     restart: always
     environment:
@@ -14,7 +14,8 @@ services:
       - db_data:/var/lib/mysql
 
   php:
-    image: php:8.2-apache
+    build:
+    context: ./backend
     container_name: php-apache
     restart: always
     ports:
